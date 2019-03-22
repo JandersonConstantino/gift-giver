@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`App renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App />,
@@ -28,6 +28,9 @@ ShallowWrapper {
         >
           Add Gift
         </ForwardRef(Bootstrap(Button))>,
+        <div
+          className="gift-list"
+        />,
       ],
     },
     "ref": null,
@@ -61,6 +64,18 @@ ShallowWrapper {
           "render": [Function],
         },
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "gift-list",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "div",
+      },
     ],
     "type": "div",
   },
@@ -80,6 +95,9 @@ ShallowWrapper {
           >
             Add Gift
           </ForwardRef(Bootstrap(Button))>,
+          <div
+            className="gift-list"
+          />,
         ],
       },
       "ref": null,
@@ -112,6 +130,18 @@ ShallowWrapper {
             "propTypes": undefined,
             "render": [Function],
           },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "gift-list",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "div",
         },
       ],
       "type": "div",

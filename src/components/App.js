@@ -20,6 +20,8 @@ class App extends React.Component {
   }
 
   render = () => {
+    const { gifts } = this.state
+
     return (
       <div>
         <h2>Gift Giver</h2>
@@ -28,6 +30,11 @@ class App extends React.Component {
         >
           Add Gift
         </Button>
+        <div className='gift-list'>
+          {gifts.map(gift => (
+            <div key={gift.id}></div>
+          ))}
+        </div>
       </div>
     )
   }
