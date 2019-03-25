@@ -1,7 +1,7 @@
 import React from 'react'
-import {
-  Button
-} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
+
+import Gift from './Gift'
 
 
 class App extends React.Component {
@@ -32,7 +32,7 @@ class App extends React.Component {
         </Button>
         <div className='gift-list'>
           {gifts.map(gift => (
-            <div key={gift.id}></div>
+            <Gift key={gift.id}></Gift>
           ))}
         </div>
       </div>
