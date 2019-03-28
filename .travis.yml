@@ -1,9 +1,27 @@
 language: node_js
+
+env:
+  - CI=true
+
 node_js:
   - 8
+
+cache:
+  directories:
+    - node_modules
+
+install:
+ - npm install
+
+script:
+  - npm run build
+  - npm run test
+
 branches:
   only:
     - master
+
 sudo: required
+
 after_success:
   - npm run coveralls
