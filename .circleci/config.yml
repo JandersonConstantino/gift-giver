@@ -25,6 +25,8 @@ jobs:
 
       - run: yarn test
 
+      - run: yarn coveralls
+
 workflows:
   version: 2
   deploy:
